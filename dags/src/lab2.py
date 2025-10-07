@@ -10,9 +10,11 @@ import os
 DATA_DIR = "/opt/airflow/data"
 WORK_DIR = "/opt/airflow/working_data"
 
-DATA_FILE = os.path.join(DATA_DIR, "Iris - all-numbers.csv")
-MODEL_FILE = os.path.join(WORK_DIR, "iris_kmeans_model.pkl")
-PLOT_FILE = os.path.join(WORK_DIR, "elbow_plot.png")
+# ✅ Use your actual dataset and consistent output names
+DATA_FILE = os.path.join(DATA_DIR, "heart.csv")
+MODEL_FILE = os.path.join(WORK_DIR, "heart_kmeans_model.pkl")
+PLOT_FILE = os.path.join(WORK_DIR, "heart_elbow_plot.png")
+
 
 
 def load_data():
